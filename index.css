@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+body {
+  background-color: hsl(217, 54%, 11%);
+}
+/* media */
+@media screen and (max-width: 375px) {
+  #container {
+    width: 20rem;
+    height: 10rem;
+    display: block;
+    top: 16rem;
+  }
+  .texth {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0.3rem;
+  }
+  .textp {
+    font-size: 2rem;
+    font-weight: 700;
+    color: hsl(212, 45%, 89%);
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 1440px) {
+  #container {
+    width: 40rem;
+    height: 20rem;
+    display: block;
+    top: 20rem;
+  }
+  .texth {
+    font-size: 1.7rem;
+    font-weight: 700;
+    padding: 0.7rem;
+  }
+  .textp {
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: hsl(212, 45%, 89%);
+    padding: 1rem;
+  }
+}
+
+/* finished */
+#container {
+  min-width: 100%;
+  position: relative;
+  top: 16rem;
+}
+/* .general {
+  background-color: hsl(0, 0%, 100%);
+  width: -51rem;
+  height: auto;
+} */
+.img-crd {
+  width: 30rem;
+  height: 55rem;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  border-radius: 0.9rem;
+  background-color: hsl(216, 50%, 16%);
+}
+.img-tags {
+  width: 30rem;
+  padding: 2rem;
+  border-radius: 2.7rem;
+}
+.img-crd:hover {
+  background: hsl(180, 43%, 1%);
+  background-position-y: calc(50%50%);
+  transition: all 3s;
+}
+.hovers {
+  position: absolute;
+  left: 40%;
+  display: block;
+  bottom: 68%;
+  cursor: pointer;
+  opacity: 0;
+}
+.hovers:hover {
+  background-color: hsl(178, 100%, 50%);
+  width: 40%;
+  opacity: 0.9;
+  border-radius: 5%;
+  transform-origin: 50%;
+}
+.texth {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: hsl(0, 0%, 100%);
+  padding: 0.5rem;
+  position: absolute;
+  left: 2rem;
+  cursor: pointer;
+}
+.texth:hover {
+  color: hsl(178, 100%, 50%);
+  transition: all 0.2s;
+}
+.textp {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: hsl(215, 51%, 70%);
+  text-transform: capitalize;
+  margin-top: 3rem;
+  position: absolute;
+  left: 1.1rem;
+  text-align: left;
+  padding: 1rem;
+}
+/* ----------------- */
+
+ul {
+  list-style: none;
+  position: relative;
+}
+
+li .left {
+  display: block;
+  float: left;
+  font-size: 1.2rem;
+  color: hsl(178, 100%, 50%);
+  text-decoration: none;
+  position: absolute;
+  top: 12rem;
+  left: 1.9rem;
+}
+li .right {
+  color: hsl(215, 51%, 70%);
+  float: left;
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-decoration: none;
+  position: absolute;
+  top: 12rem;
+  left: 17rem;
+  right: 0;
+  display: block;
+}
+.icon {
+  margin-bottom: -0.3rem;
+}
+.hrone {
+  border-bottom: 0.1rem solid hsl(215, 51%, 70%);
+  opacity: 0.4;
+  position: absolute;
+  top: 15rem;
+  left: 1.9rem;
+  width: 27rem;
+}
+/* ---------- */
+.imgtext {
+  position: relative;
+  float: left;
+}
+.imgtext img {
+  width: 3rem;
+  position: absolute;
+  top: 17rem;
+  left: 2rem;
+  border: 0.1rem solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
+.avatartext {
+  position: absolute;
+  width: 15rem;
+  top: 18rem;
+  text-align: left;
+  color: white;
+  letter-spacing: 0.1rem;
+  left: 6rem;
+  cursor: pointer;
+}
+.avatartext:hover {
+  color: hsl(178, 100%, 50%);
+  transition: all 0.2s;
+}
+.avatartext span {
+  color: hsl(215, 51%, 70%);
+}
